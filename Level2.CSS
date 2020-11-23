@@ -1,0 +1,106 @@
+.header {
+  background-color: #900C3F;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 70%;
+  padding: 10px;
+  float: left;
+  font-family: Verdana;
+  font-size: 17px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 8%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: B88A9C;
+}
+
+.resetBtn {
+  padding: 10px;
+  width: 8%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.resetBtn:hover {
+  background-color: F74343;
+}
+
+ul li:nth-child(odd) {
+  background: #FFD4D4;
+}
+
+.sortBtn {
+  padding: 10px;
+  width: 8%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.sortBtn:hover {
+  background-color: FFB5B5;
+}
+
+
+
