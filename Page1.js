@@ -1,4 +1,6 @@
-var inputText = document.getElementById("txt"),
+
+            
+            var inputText = document.getElementById("txt"),
                  items = document.querySelectorAll("#list li"),
                  tab = [], index;
          
@@ -72,11 +74,11 @@ var inputText = document.getElementById("txt"),
                   
                       refreshArray();
                       if(items.length > 0){
-      for (i = 0; i < items.length; i++) {
+			for (i = 0; i < items.length; i++) {
                           //items[index].parentNode.removeChild(items[index]);
-        items[i].parentNode.removeChild(items[i]);
+				items[i].parentNode.removeChild(items[i]);
                           inputText.value = "";
-        }
+				}
                       }
               }
 
