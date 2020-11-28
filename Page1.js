@@ -1,5 +1,3 @@
-
-            
             var inputText = document.getElementById("txt"),
                  items = document.querySelectorAll("#list li"),
                  tab = [], index;
