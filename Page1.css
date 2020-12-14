@@ -8,12 +8,6 @@
   font-weight: bold;
 }
 
-.header: after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 ul {
   margin: 0;
   padding: 0px;

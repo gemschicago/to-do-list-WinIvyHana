@@ -1,10 +1,11 @@
+            // get the task value from the input box
             var inputText = document.getElementById("txt"),
                  items = document.querySelectorAll("#list li"),
                  tab = [], index;
          
+
              // get the selected li index using array
              // populate array with li values
-             
              for(var i = 0; i < items.length; i++){
                  tab.push(items[i].innerHTML);
              }
@@ -20,7 +21,9 @@
                  };
                  
              }
-            
+
+
+            //to reset the array list 
             function refreshArray()
             {
                 // clear array
@@ -31,36 +34,42 @@
                  tab.push(items[i].innerHTML);
                }
             }
+
+
+            //to add a task to the list FUNCTION
             function addLI(){
-                
                 var listNode = document.getElementById("list"),
                     textNode = document.createTextNode(inputText.value),
                     liNode = document.createElement("LI");
-                    
                     liNode.appendChild(textNode);
                     listNode.appendChild(liNode);
                     
+                    //calling refreshArray() 
                     refreshArray();
                     
-                    // add event to the new LI
-                    
+                    // add task to the new LI WHEN CLICKED
                     liNode.onclick = function(){
                      index = tab.indexOf(liNode.innerHTML);
                      console.log(liNode.innerHTML + " INDEX = " + index);
+                     
                      // set the selected li value into input text
                      inputText.value = liNode.innerHTML;
                  };
                     
              }
              
+
+             //to edit a task FUNCTION
              function editLI(){
                  // edit the selected li using input text
                  items[index].innerHTML = inputText.value;
                  refreshArray();
               }
               
+
+              //to delete a task FUNCTION
               function deleteLI(){
-                  
+                      //calling refreshArray()
                       refreshArray();
                       if(items.length > 0){
                           items[index].parentNode.removeChild(items[index]);
@@ -68,12 +77,14 @@
                       }
               }
 
+
+              //to clear all tasks FUNCTION
               function clearLI(){
-                  
+                      //calling refreshArray()
                       refreshArray();
                       if(items.length > 0){
 			for (i = 0; i < items.length; i++) {
-                          //items[index].parentNode.removeChild(items[index]);
+        //items[index].parentNode.removeChild(items[index]);
 				items[i].parentNode.removeChild(items[i]);
                           inputText.value = "";
 				}
@@ -81,12 +92,14 @@
               }
 
 
+//to sort all tasks alphabetically FUNCTION
 function sortLI() {
 
   var list, i, switching, b, shouldSwitch;
   list = document.getElementById("list");
-
-  switching = true;
+  
+  // start sorting
+  switching = true; 
   while (switching) {
     switching = false;
     b = list.getElementsByTagName("LI");
@@ -105,7 +118,6 @@ function sortLI() {
       }
     }
     if (shouldSwitch) {
-      //alert("You must write something!");
       /* If a switch has been marked, make the switch
       and mark the switch as done: */
       b[i].parentNode.insertBefore(b[i + 1], b[i]);

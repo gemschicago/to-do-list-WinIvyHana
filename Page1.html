@@ -1,7 +1,7 @@
 <HTML>
 <HEAD>
-<title>My To-do list</title>
-<link rel="stylesheet" href="Page1.css">
+<title>My To-Do list</title>
+<link rel="stylesheet" href="Page1.css"> <!--include file - CSS Stylesheet-->
 
 </HEAD>
 
@@ -9,17 +9,17 @@
         <div class="header">
         <h1>My To-Do List</h1>
         <input type="text" id="txt" placeholder="New task....">
-        <button onclick="addLI()">Add a Task</button>
-        <button onclick="editLI()">Edit this Task</button>
-        <button onclick="deleteLI()">Delete this Task</button>
-        <button onclick="clearLI()">Clear all Tasks</button>
-	    <button onclick="sortLI()">Sort all Tasks</button>
+        <button onclick="addLI()">Add a Task</button> <!--call jscript function addLI() to Add a Task.-->
+        <button onclick="editLI()">Edit this Task</button> <!--call jscript function editLI() to Edit this Task.-->
+        <button onclick="deleteLI()">Delete this Task</button> <!--call jscript function deleteLI() to Delete this Task.-->
+        <button onclick="clearLI()">Clear all Tasks</button> <!--call jscript function clearLI() to Clear all Tasks.-->
+	    <button onclick="sortLI()">Sort all Tasks</button> <!--call jscript function sortLI() to Sort all Tasks alphabetically.-->
         </div>
 
-        <ul id="list">
-            <li> ALWAYS: Drink water</li> <!--<img src="IMG_smileface.jpg">        -->
+        <ul id="list"> <!--to build a task list-->
+            <li> ALWAYS: Drink water</li> <!--this is a default task-->
         </ul>      
     </BODY>
 
-<script src="Page1.js"></script>
+<script src="Page1.js"></script> <!--include file - jscript-->
 </HTML>
